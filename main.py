@@ -22,7 +22,7 @@ class SuppressStdout:
         sys.stderr = self._original_stderr
 
 # Load the PDF and split it into chunks
-loader = PyPDFLoader(r"C:\Users\yyuej\Desktop\AI实习\RAG\AsAm55.pdf")
+loader = PyPDFLoader(r"\AsAm55.pdf")
 data = loader.load()
 
 text_splitter = RecursiveCharacterTextSplitter(chunk_size=1024, chunk_overlap=100)
